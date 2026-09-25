@@ -1,0 +1,16 @@
+foodpack — Company Profile (for website)
+==========================================
+
+Brand (English)      : foodpack
+Brand (中文音译)     : 孚派克  (transliteration only, not a separate brand)
+Legal Entity         : Shenzhen Food Pack Technology Co., Ltd.
+English Address      : Room 204, Building 7, Holiday Prime Residence,
+                       N28 District, Haibin Community, Xin'an Street,
+                       Bao'an District, Shenzhen, Guangdong Province, China
+Phone / WhatsApp     : +86 134 8079 1716
+Email                : foodpack@foodpackcn.com
+Website             : www.foodpackcn.com
+Bank                 : China Merchants Bank (Head Office, Shenzhen)
+Related EU entity    : Soja Blanca S.L. (Spain, NIF: B-87344479)
+
+Source: 尺寸明细.pdf + user confirmation (Desktop/独立站)
