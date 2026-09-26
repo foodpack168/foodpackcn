@@ -1,24 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Food Pack logo icon">
   <defs>
-    <linearGradient id="bowlGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#4CAF50"/>
-      <stop offset="1" stop-color="#2E7D32"/>
+    <linearGradient id="bG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7AC74A"/><stop offset="1" stop-color="#2E7D32"/>
     </linearGradient>
-    <linearGradient id="leafGrad" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#6CBF3B"/>
-      <stop offset="1" stop-color="#9CD65A"/>
+    <linearGradient id="rG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8FD455"/><stop offset="1" stop-color="#4CAF50"/>
+    </linearGradient>
+    <linearGradient id="lG" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#7AC74A"/><stop offset="1" stop-color="#A8D95B"/>
     </linearGradient>
   </defs>
-
-  <!-- bowl body: bold half-disc, fills lower area -->
-  <path d="M28 118 A72 72 0 0 0 172 118 Z" fill="url(#bowlGrad)"/>
-  <!-- bowl rim: single light band, no inner ellipse / soil -->
-  <ellipse cx="100" cy="118" rx="72" ry="13" fill="#66BB6A"/>
-
-  <!-- stem: thicker -->
-  <path d="M100 118 C96 96 106 80 100 54" fill="none" stroke="#3FA34D" stroke-width="11" stroke-linecap="round"/>
-
-  <!-- two big leaves, fill upper area -->
-  <path d="M100 62 C92 34 66 22 44 28 C50 54 76 68 100 62 Z" fill="url(#leafGrad)"/>
-  <path d="M100 62 C108 34 134 22 156 28 C150 54 124 68 100 62 Z" fill="url(#leafGrad)"/>
+  <g transform="translate(100 110) scale(1.16) translate(-100 -110)">
+    <path d="M40 118 A60 60 0 0 0 160 118 Z" fill="url(#bG)"/>
+    <ellipse cx="100" cy="118" rx="60" ry="14" fill="url(#rG)"/>
+    <ellipse cx="100" cy="118" rx="47" ry="10" fill="#1B5E20"/>
+    <path d="M56 118 Q66 108 78 114 Q88 104 100 112 Q112 104 122 114 Q134 108 144 118 Q122 124 100 124 Q78 124 56 118 Z" fill="#123A16"/>
+    <path d="M100 118 C97 100 105 84 100 60" fill="none" stroke="#3FA34D" stroke-width="12" stroke-linecap="round"/>
+    <path d="M102 92 C107 81 118 78 126 80 C124 91 113 97 102 94 Z" fill="#4CAF50"/>
+    <path d="M100 62 C95 42 76 33 60 36 C63 54 81 66 100 62 Z" fill="url(#lG)"/>
+    <path d="M100 62 C105 42 124 33 140 36 C137 54 119 66 100 62 Z" fill="url(#lG)"/>
+  </g>
 </svg>
