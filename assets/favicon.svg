@@ -1,23 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Food Pack logo icon">
   <defs>
-    <linearGradient id="bG" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7AC74A"/><stop offset="1" stop-color="#2E7D32"/>
+    <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B3D222"/><stop offset="1" stop-color="#97C537"/>
     </linearGradient>
-    <linearGradient id="rG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#8FD455"/><stop offset="1" stop-color="#4CAF50"/>
+    <linearGradient id="lg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#A5CC30"/><stop offset="1" stop-color="#C6E12A"/>
     </linearGradient>
-    <linearGradient id="lG" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#7AC74A"/><stop offset="1" stop-color="#A8D95B"/>
+    <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7FB02C"/><stop offset="1" stop-color="#458015"/>
     </linearGradient>
   </defs>
-  <g transform="translate(100 110) scale(1.16) translate(-100 -110)">
-    <path d="M40 118 A60 60 0 0 0 160 118 Z" fill="url(#bG)"/>
-    <ellipse cx="100" cy="118" rx="60" ry="14" fill="url(#rG)"/>
-    <ellipse cx="100" cy="118" rx="47" ry="10" fill="#1B5E20"/>
-    <path d="M56 118 Q66 108 78 114 Q88 104 100 112 Q112 104 122 114 Q134 108 144 118 Q122 124 100 124 Q78 124 56 118 Z" fill="#123A16"/>
-    <path d="M100 118 C97 100 105 84 100 60" fill="none" stroke="#3FA34D" stroke-width="12" stroke-linecap="round"/>
-    <path d="M102 92 C107 81 118 78 126 80 C124 91 113 97 102 94 Z" fill="#4CAF50"/>
-    <path d="M100 62 C95 42 76 33 60 36 C63 54 81 66 100 62 Z" fill="url(#lG)"/>
-    <path d="M100 62 C105 42 124 33 140 36 C137 54 119 66 100 62 Z" fill="url(#lG)"/>
+  <g transform="translate(33.5 -0.95) scale(0.95)">
+    <!-- ring = the letter O -->
+    <circle cx="70" cy="125" r="57.75" fill="none" stroke="url(#rg)" stroke-width="24.5"/>
+    <!-- bowl -->
+    <path d="M33 170 A37 31 0 0 0 107 170 Z" fill="#72AA3A"/>
+    <!-- soil mound -->
+    <path d="M32 173 C42 158 56 160 70 164 C84 158 96 160 104 172 C80 179 54 179 32 173 Z" fill="#14401A"/>
+    <!-- stem: curved, thick, light-top gradient -->
+    <path d="M72 172 C69 150 77 134 72 110 C68 94 64 70 70 50" fill="none" stroke="url(#sg)" stroke-width="12" stroke-linecap="round"/>
+    <!-- side leaf -->
+    <path d="M75 112 C80 96 96 84 116 84 C112 102 94 114 75 112 Z" fill="#A9C93B"/>
+    <!-- top leaves: fat almonds -->
+    <path d="M70 50 C60 20 44 10 26 12 C38 26 56 42 70 50 Z" fill="url(#lg)"/>
+    <path d="M70 50 C84 20 100 8 112 8 C104 26 86 42 70 50 Z" fill="url(#lg)"/>
   </g>
 </svg>
