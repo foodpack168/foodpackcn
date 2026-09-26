@@ -197,3 +197,25 @@ document.querySelectorAll(".factory-video video").forEach((video) => {
   video.addEventListener("play", swapToMobile, { once: false });
   swapToMobile();
 });
+
+// ===== FAQ: reveal the group that owns a linked question =====
+// Deep links such as /#faq-moq must open the collapsed group holding that item.
+(function () {
+  const revealTarget = () => {
+    const id = (window.location.hash || "").replace("#", "");
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (!target) return;
+    const group = target.closest(".faq-group");
+    if (group) {
+      const state = group.querySelector(".grp-state");
+      if (state) state.checked = true;
+    }
+    const item = target.closest(".faq-item");
+    if (item) item.open = true;
+  };
+
+  window.addEventListener("hashchange", revealTarget);
+  if (document.readyState !== "loading") revealTarget();
+  else document.addEventListener("DOMContentLoaded", revealTarget);
+})();
