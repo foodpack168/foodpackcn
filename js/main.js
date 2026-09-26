@@ -91,7 +91,7 @@ toggle.addEventListener("click", () => links.classList.toggle("open"));
 
 // ===== Contact form =====
 // PASTE YOUR FORM ENDPOINT HERE after signing up at https://formspree.io (or any form handler).
-// Example: const FORM_ENDPOINT = "https://formspree.io/f/xrgjqkzd";
+// Example: const FORM_ENDPOINT = "https://formspree.io/f/mvkgbbnv";
 // Leave it empty and the form falls back to opening a pre-filled email in the visitor's mail client.
 const FORM_ENDPOINT = "https://formspree.io/f/mvkgbbnv";
 const TO_EMAIL = "foodpack@foodpackcn.com";
