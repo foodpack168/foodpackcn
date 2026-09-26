@@ -2,30 +2,30 @@
 const productSeries = [
   {
     title: "Plastic Series",
-    note: "PP / PET · food-grade, microwave-safe and freezer-grade options for hot and cold food service",
+    note: "PS, OPS, BOPS, PP and PE — food-grade thermoformed plastics, supplied with clear lids and printed to your layout",
     items: [
       {
         name: "Sushi Boxes",
-        desc: "PET and PP sushi boxes with clear lids and multi-compartment options. Custom size, colour and logo printing.",
-        alt: "Sushi box with clear lid, custom printed logo",
+        desc: "PS trays with clear OPS lids, single or multi-cavity, in the standard FP-00 to FP-11 sizes. Custom size, colour and logo printing.",
+        alt: "Sushi box with clear OPS lid, custom printed logo",
         img: "assets/products/sushi-box.jpg"
       },
       {
         name: "Lunch Boxes",
-        desc: "Microwave-safe bento and lunch boxes in single or multi-compartment designs, with leak-resistant lids.",
+        desc: "PS and BOPS bento boxes in single or multi-compartment designs, with leak-resistant lids. Custom size, colour and logo printing.",
         alt: "Plastic bento lunch box with multiple compartments",
         img: "assets/products/lunch-box.jpg"
       },
       {
         name: "Soy Sauce Bottles",
-        desc: "PET and glass soy sauce bottles with tamper-evident caps, from 30 ml to 500 ml.",
-        alt: "PET and glass soy sauce bottles with tamper-evident caps",
+        desc: "Lightweight PE soy sauce bottles, white bottle with red cap, in 15 ml and 30 ml. Custom labelling and carton printing.",
+        alt: "PE soy sauce bottle, 15 ml and 30 ml, white bottle with red cap",
         img: "assets/products/soy-sauce-bottle.jpg"
       },
       {
         name: "Sauce Cups",
-        desc: "Portion-control sauce cups with lids, 30–120 ml (1–4 oz) in food-grade PP. Custom embossing or printing.",
-        alt: "Disposable sauce cup with lids in portions of 30 to 120 ml",
+        desc: "One-piece PP sauce cups with the lid attached (20 ml / 0.7 oz) — leak-free for soy sauce, dips and dressings. 50 cups per sleeve.",
+        alt: "Disposable sauce cup with lid attached, 20 ml, clear PP",
         img: "assets/products/sauce-cup.jpg"
       },
       {
@@ -48,8 +48,8 @@ const productSeries = [
       },
       {
         name: "Kraft Lunch Boxes",
-        desc: "Oil-resistant kraft lunch boxes with clear lids, suited to salads, grain bowls and hot meals.",
-        alt: "Oil-resistant kraft lunch box with clear lid",
+        desc: "Grease-resistant kraft lunch boxes with clear lids, suited to salads, grain bowls and hot meals.",
+        alt: "Grease-resistant kraft lunch box with clear lid",
         img: "assets/products/kraft-lunch-box.jpg"
       },
       {
