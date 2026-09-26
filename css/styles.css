@@ -30,6 +30,12 @@ a{color:inherit;text-decoration:none}
 .nav-links{display:flex;align-items:center;gap:26px}
 .nav-links a{color:var(--ink);font-weight:500}
 .nav-links a:hover{color:var(--green)}
+.nav-right{display:flex;align-items:center}
+.nav-social{display:flex;align-items:center;gap:8px;margin-right:20px;padding-right:20px;border-right:1px solid var(--line)}
+.nav-ic{width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);background:#fff;color:var(--green);cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+.nav-ic svg{width:16px;height:16px}
+a.nav-ic:hover{border-color:var(--green);background:#f4faf4}
+.nav-ic-wechat{border-style:dashed;cursor:default}
 .nav-toggle{display:none;background:none;border:none;font-size:26px;color:var(--green);cursor:pointer}
 
 /* Hero */
@@ -199,12 +205,16 @@ a.social-item:hover svg{color:var(--green)}
   .hero h1{font-size:34px}
   .leaf-badge{order:-1}
   .why-block{padding:26px}
-}
-@media(max-width:640px){
+  /* Collapse nav earlier so logo + social icons + menu never overflow */
   .nav-links{position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:10px 20px;border-bottom:1px solid var(--line);display:none}
   .nav-links.open{display:flex}
   .nav-links a{padding:12px 0;width:100%}
   .nav-toggle{display:block}
+  .brand-logo{height:40px}
+  .nav-social{gap:7px;margin-right:14px;padding-right:14px}
+  .nav-ic{width:31px;height:31px}
+}
+@media(max-width:640px){
   .grid-4{grid-template-columns:1fr}
   .hero{padding:44px 0 56px}
   .video-pair{grid-template-columns:1fr}
@@ -224,5 +234,8 @@ a.social-item:hover svg{color:var(--green)}
   .form-privacy,.copyright,.hero-stats span,.series-head span{font-size:13.5px}
   .social-item{padding:10px 14px;font-size:14.5px}
   .social-item em{font-size:13px}
+  .nav-social{gap:6px;margin-right:10px;padding-right:10px}
+  .nav-ic{width:29px;height:29px}
+  .nav-ic svg{width:13px;height:13px}
   .card h3{font-size:17px}
 }
