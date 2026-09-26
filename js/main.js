@@ -17,16 +17,16 @@ const productSeries = [
         img: "assets/products/lunch-box.jpg"
       },
       {
-        name: "Sauce Cups",
-        desc: "Portion-control sauce cups with lids, 30–120 ml (1–4 oz) in food-grade PP. Custom embossing or printing.",
-        alt: "Disposable sauce cup with lids in portions of 30 to 120 ml",
-        img: "assets/products/sauce-cup.jpg"
-      },
-      {
         name: "Soy Sauce Bottles",
         desc: "PET and glass soy sauce bottles with tamper-evident caps, from 30 ml to 500 ml.",
         alt: "PET and glass soy sauce bottles with tamper-evident caps",
         img: "assets/products/soy-sauce-bottle.jpg"
+      },
+      {
+        name: "Sauce Cups",
+        desc: "Portion-control sauce cups with lids, 30–120 ml (1–4 oz) in food-grade PP. Custom embossing or printing.",
+        alt: "Disposable sauce cup with lids in portions of 30 to 120 ml",
+        img: "assets/products/sauce-cup.jpg"
       },
       {
         name: "Soup Bowls",
