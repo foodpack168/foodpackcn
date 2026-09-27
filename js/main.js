@@ -96,7 +96,7 @@ productSeries.forEach((s) => {
       <h3>${p.name}</h3>
       ${p.spec ? `<span class="card-spec">${p.spec}</span>` : ""}
       <p>${p.desc}</p>
-      <a class="card-link" href="#contact">Inquire →</a>
+      <a class="card-link" href="products/${p.id}.html">View details →</a>
     `;
     grid.appendChild(card);
   });
