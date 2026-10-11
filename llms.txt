@@ -1,15 +1,15 @@
 # foodpack — Shenzhen Food Pack Technology Co., Ltd.
 
-Shenzhen Food Pack Technology Co., Ltd. (brand: foodpack) is a manufacturer and exporter of disposable food packaging, based in Shenzhen, Guangdong, China, with its own factory in Shantou, Guangdong. Founded in 2003. Daily output 60,000 pieces across moulding, printing and assembly.
+Shenzhen Food Pack Technology Co., Ltd. (brand: foodpack) is a manufacturer and exporter of disposable food packaging, based in Shenzhen, Guangdong, China, with its own factory in Shantou, Guangdong. Founded in 2003. Daily output 4,000 pieces across moulding, printing and assembly.
 
 ## Products
-Two material lines — food-grade plastic and eco-friendly kraft paper. The moulded and paper ranges are customizable in size, colour, structure and printing.
+Two material lines — food-grade plastic and eco-friendly kraft paper. Most items are customizable in size, colour, structure and printing. Two items are stock-mould only, with no size, printing or label customization: Soy Sauce Bottles and Sauce Cups.
 
 ### Plastic Series
 - Sushi Boxes — PS trays with clear OPS lids, single or multi-cavity, FP-00 to FP-11 sizes. https://www.foodpackcn.com/products/sushi-boxes.html
 - Lunch Boxes — PS and BOPS bento boxes, single or multi-compartment, leak-resistant lids. https://www.foodpackcn.com/products/lunch-boxes.html
-- Soy Sauce Bottles — lightweight PE, 15 ml and 30 ml, white bottle with red / green / black cap (stock moulds only). https://www.foodpackcn.com/products/soy-sauce-bottles.html
-- Sauce Cups — one-piece PP, 20 ml / 0.7 oz, lid attached, leak-free; 100 cups per sleeve. https://www.foodpackcn.com/products/sauce-cups.html
+- Soy Sauce Bottles — lightweight PE, 15 ml and 30 ml, white bottle with red / green / black cap. Stock moulds only. https://www.foodpackcn.com/products/soy-sauce-bottles.html
+- Sauce Cups — one-piece PP, 20 ml / 0.7 oz, lid attached, leak-free; 100 cups per sleeve. Stock moulds only. https://www.foodpackcn.com/products/sauce-cups.html
 - Soup Bowls — PS with clear OPS lids, leak-resistant for takeaway, ramen and hot food delivery. https://www.foodpackcn.com/products/soup-bowls.html
 
 ### Eco-Friendly Paper Series
@@ -22,11 +22,12 @@ Food-grade plastics: PS, OPS, BOPS, PP, PE. The paper series uses grease-resista
 Key products are tested by SGS against US FDA 21 CFR 177.1640 and EU Regulation (EC) No 1935/2004 with (EU) No 10/2011 — all reports Pass. LFGB reports for the paper series and heavy-metal screening are available on request.
 
 ## Customization
-OEM and ODM supported: dimensions, cavity structure, thickness, colour and printing (logo embossed into the tray wall, printed on IML film, or as a private-label sticker). Sampling lead time 3–5 days.
+OEM and ODM supported for sushi boxes, lunch boxes and soup bowls (plastic and kraft): dimensions, cavity structure, thickness, colour and printing (logo embossed into the tray wall, printed on IML film, or as a private-label sticker). Sampling lead time 3–5 days.
+Not customizable — Soy Sauce Bottles and Sauce Cups are produced from existing stock moulds only: no custom size, no custom printing, no custom label.
 
 ## Company
 - Founded: 2003
-- Factory: 5,000 m² in Shantou, Guangdong; daily capacity 60,000 pieces
+- Factory: 2,000 m² in Shantou, Guangdong; daily capacity 4,000 pieces
 - Office: Room 204, Building 7, Holiday Prime Residence, N28 District, Haibin Community, Xin'an Street, Bao'an District, Shenzhen, Guangdong, China
 - Export markets: Spain, Belgium, Peru, Canada, Australia, Hong Kong SAR (China), and the Chinese domestic market
 - Payment: T/T bank transfer only — 30% deposit, 70% balance before shipment. Quoted FOB Yantian.
