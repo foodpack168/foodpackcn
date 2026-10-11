@@ -136,7 +136,7 @@ a.nav-ic:hover{border-color:var(--green);background:#f4faf4}
 /* Shipping photos */
 .ship-grid{display:flex;gap:28px;justify-content:center;margin-top:26px;flex-wrap:wrap;align-items:flex-start}
 .ship-item{max-width:340px;text-align:center}
-.ship-item img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);display:block}
+.ship-item img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);display:block}
 .ship-item figcaption{margin-top:8px;font-size:13px;color:var(--muted);line-height:1.5}
 
 /* Custom image */
