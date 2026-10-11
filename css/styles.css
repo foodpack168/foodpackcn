@@ -135,12 +135,9 @@ a.nav-ic:hover{border-color:var(--green);background:#f4faf4}
 
 /* Shipping photos */
 .ship-grid{display:flex;gap:28px;justify-content:center;margin-top:26px;flex-wrap:wrap;align-items:flex-start}
-.ship-item{max-width:300px;text-align:center}
+.ship-item{max-width:340px;text-align:center}
 .ship-item img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);display:block}
 .ship-item figcaption{margin-top:8px;font-size:13px;color:var(--muted);line-height:1.5}
-/* portrait photos: cap the height so a 3-up row stays visually balanced */
-.ship-item img[src$="shipping-container.jpg"],
-.ship-item img[src$="shipping-seal.jpg"]{max-height:380px;width:auto;margin:0 auto}
 
 /* Custom image */
 .about-card .custom-img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);display:block}
@@ -242,9 +239,7 @@ a.social-item:hover svg{color:var(--green)}
   .video-pair{grid-template-columns:1fr}
   .about-card .video-pair video{max-width:260px}
   .ship-grid{gap:20px}
-  .ship-item{max-width:240px}
-  .ship-item img[src$="shipping-container.jpg"],
-  .ship-item img[src$="shipping-seal.jpg"]{max-height:300px}
+  .ship-item{max-width:260px}
   .report-card{max-width:none}
   .why-block{padding:20px;margin-top:26px;border-radius:14px}
   .block-head h3{font-size:20px}
