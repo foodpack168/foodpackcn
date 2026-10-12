@@ -79,33 +79,37 @@ const productSeries = [
 ];
 
 const grid = document.getElementById("productGrid");
-productSeries.forEach((s) => {
-  const head = document.createElement("div");
-  head.className = "series-head";
-  head.innerHTML = `<h3>${s.title}</h3><span>${s.note}</span>`;
-  grid.appendChild(head);
-  s.items.forEach((p) => {
-    const card = document.createElement("article");
-    card.className = "card";
-    if (p.id) { card.id = p.id; card.setAttribute("data-product", p.name); }
-    const visual = p.img
-      ? `<div class="card-ph"><img src="${p.img}" alt="${p.alt || p.name}" loading="lazy"></div>`
-      : `<div class="card-ph"><span class="card-ico">📦</span><span class="ph-tag">Photo coming soon</span></div>`;
-    card.innerHTML = `
-      ${visual}
-      <h3>${p.name}</h3>
-      ${p.spec ? `<span class="card-spec">${p.spec}</span>` : ""}
-      <p>${p.desc}</p>
-      <a class="card-link" href="products/${p.id}.html">View details →</a>
-    `;
-    grid.appendChild(card);
+if (grid) {
+  productSeries.forEach((s) => {
+    const head = document.createElement("div");
+    head.className = "series-head";
+    head.innerHTML = `<h3>${s.title}</h3><span>${s.note}</span>`;
+    grid.appendChild(head);
+    s.items.forEach((p) => {
+      const card = document.createElement("article");
+      card.className = "card";
+      if (p.id) { card.id = p.id; card.setAttribute("data-product", p.name); }
+      const visual = p.img
+        ? `<div class="card-ph"><img src="${p.img}" alt="${p.alt || p.name}" loading="lazy"></div>`
+        : `<div class="card-ph"><span class="card-ico">📦</span><span class="ph-tag">Photo coming soon</span></div>`;
+      card.innerHTML = `
+        ${visual}
+        <h3>${p.name}</h3>
+        ${p.spec ? `<span class="card-spec">${p.spec}</span>` : ""}
+        <p>${p.desc}</p>
+        <a class="card-link" href="products/${p.id}.html">View details →</a>
+      `;
+      grid.appendChild(card);
+    });
   });
-});
+}
 
 // ===== Mobile nav toggle =====
 const toggle = document.getElementById("navToggle");
 const links = document.getElementById("navLinks");
-toggle.addEventListener("click", () => links.classList.toggle("open"));
+if (toggle && links) {
+  toggle.addEventListener("click", () => links.classList.toggle("open"));
+}
 
 // ===== Contact form =====
 // PASTE YOUR FORM ENDPOINT HERE after signing up at https://formspree.io (or any form handler).
@@ -215,7 +219,8 @@ function handleSubmit(e) {
 })();
 
 // ===== Footer year =====
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // ===== Factory videos: serve the lighter 480p clips to phones (saves mobile data) =====
 document.querySelectorAll(".factory-video video").forEach((video) => {
