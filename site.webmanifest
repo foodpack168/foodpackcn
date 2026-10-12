@@ -1,0 +1,13 @@
+{
+  "name": "foodpack — Sushi Boxes & Food Packaging Manufacturer",
+  "short_name": "foodpack",
+  "description": "B2B manufacturer of sushi boxes, lunch boxes, sauce cups, soy sauce bottles and soup bowls. Shenzhen, China.",
+  "icons": [
+    { "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ],
+  "theme_color": "#2E7D32",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}
