@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.foodpackcn.com/sitemap.xml
-LLMS-TXT: https://www.foodpackcn.com/llms.txt
+Sitemap: https://foodpackcn.com/sitemap.xml
+LLMS-TXT: https://foodpackcn.com/llms.txt
