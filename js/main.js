@@ -182,6 +182,38 @@ function handleSubmit(e) {
   return false;
 }
 
+// ===== WeChat QR modal =====
+(function () {
+  const modal = document.getElementById("wechatModal");
+  if (!modal) return;
+  const openers = document.querySelectorAll("[data-wechat-open]");
+  const closers = modal.querySelectorAll("[data-wechat-close]");
+  const copyBtn = document.getElementById("wechatCopy");
+  const idEl = document.getElementById("wechatId");
+
+  const open = () => { modal.hidden = false; document.body.style.overflow = "hidden"; };
+  const close = () => { modal.hidden = true; document.body.style.overflow = ""; };
+
+  openers.forEach((el) => el.addEventListener("click", open));
+  closers.forEach((el) => el.addEventListener("click", close));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !modal.hidden) close(); });
+
+  if (copyBtn && idEl) {
+    copyBtn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(idEl.textContent.trim());
+      } catch {
+        const ta = document.createElement("textarea");
+        ta.value = idEl.textContent.trim();
+        document.body.appendChild(ta); ta.select();
+        document.execCommand("copy"); ta.remove();
+      }
+      copyBtn.textContent = "Copied!";
+      setTimeout(() => (copyBtn.textContent = "Copy"), 1600);
+    });
+  }
+})();
+
 // ===== Footer year =====
 document.getElementById("year").textContent = new Date().getFullYear();
 
