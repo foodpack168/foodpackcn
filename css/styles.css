@@ -35,7 +35,7 @@ a{color:inherit;text-decoration:none}
 .nav-ic{width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);background:#fff;color:var(--green);cursor:pointer;transition:border-color .2s,background .2s,color .2s}
 .nav-ic svg{width:16px;height:16px}
 a.nav-ic:hover{border-color:var(--green);background:#f4faf4}
-.nav-ic-wechat{border-style:dashed;cursor:default}
+.nav-ic-wechat{cursor:pointer;font:inherit;color:inherit}
 .nav-toggle{display:none;background:none;border:none;font-size:26px;color:var(--green);cursor:pointer}
 
 /* Hero */
@@ -205,7 +205,7 @@ a.nav-ic:hover{border-color:var(--green);background:#f4faf4}
 .social-item em{font-style:normal;font-weight:500;color:var(--muted);font-size:13px}
 a.social-item:hover{border-color:var(--green);color:var(--green);background:#f4faf4}
 a.social-item:hover svg{color:var(--green)}
-.social-item.wechat{border-style:dashed}
+.social-item.wechat{cursor:pointer}
 .footer-social{justify-content:center;margin:14px 0 10px}
 .footer-social .social-item{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35);color:#fff}
 .footer-social .social-item svg{color:#fff}
@@ -281,3 +281,25 @@ a.social-item:hover svg{color:var(--green)}
   .product-detail{grid-template-columns:1fr;gap:22px}
   .related-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+/* WeChat contact buttons (nav + footer) */
+button.nav-ic:hover{border-color:var(--green);background:#f4faf4}
+button.social-item{font-family:inherit}
+button.social-item:hover{border-color:var(--green);color:var(--green);background:#f4faf4}
+.footer-social button.social-item:hover{background:rgba(255,255,255,.2);color:#fff}
+
+/* WeChat QR modal */
+.wechat-modal{position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;padding:24px}
+.wechat-modal[hidden]{display:none}
+.wechat-modal-backdrop{position:absolute;inset:0;background:rgba(12,28,16,.62);backdrop-filter:blur(3px)}
+.wechat-modal-card{position:relative;background:#fff;border-radius:20px;padding:34px 30px 28px;text-align:center;max-width:340px;width:100%;box-shadow:0 24px 60px rgba(0,0,0,.35);animation:wechatPop .22s ease-out}
+@keyframes wechatPop{from{transform:scale(.92);opacity:0}to{transform:scale(1);opacity:1}}
+.wechat-modal-card h3{margin:0 0 16px;font-size:20px;color:var(--ink)}
+.wechat-modal-card img{width:260px;height:260px;display:block;margin:0 auto;border-radius:10px;border:1px solid var(--line)}
+.wechat-modal-hint{margin:14px 0 0;font-size:14px;color:var(--muted)}
+.wechat-id-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px}
+.wechat-id-row code{font-size:14px;background:#f2f7f2;border:1px solid var(--line);border-radius:8px;padding:7px 12px;letter-spacing:.2px}
+.wechat-id-row button{border:1px solid var(--green);background:var(--green);color:#fff;font-size:13px;font-weight:600;border-radius:8px;padding:8px 14px;cursor:pointer;transition:opacity .2s}
+.wechat-id-row button:hover{opacity:.88}
+.wechat-modal-x{position:absolute;top:10px;right:12px;border:none;background:none;font-size:28px;line-height:1;color:var(--muted);cursor:pointer;padding:4px 8px}
+.wechat-modal-x:hover{color:var(--ink)}
