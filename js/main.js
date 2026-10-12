@@ -7,7 +7,7 @@ const productSeries = [
       {
         id: "sushi-boxes",
         name: "Sushi Boxes",
-        desc: "PS trays with clear OPS lids, single or multi-cavity, in the standard FP-00 to FP-11 sizes. Custom size, colour and logo printing.",
+        desc: "PS trays with clear OPS lids, single or multi-cavity, in the standard FP-00 to FP-11 sizes. Custom size, color and logo printing.",
         spec: "PS tray · clear OPS lid · FP-00 to FP-11 · single or multi-cavity",
         alt: "Sushi box with clear OPS lid, custom printed logo",
         img: "assets/products/sushi-box.jpg"
@@ -15,7 +15,7 @@ const productSeries = [
       {
         id: "lunch-boxes",
         name: "Lunch Boxes",
-        desc: "PS and BOPS bento boxes in single or multi-compartment designs, with leak-resistant lids. Custom size, colour and logo printing.",
+        desc: "PS and BOPS bento boxes in single or multi-compartment designs, with leak-resistant lids. Custom size, color and logo printing.",
         spec: "PS and BOPS · single or multi-compartment · leak-resistant lid",
         alt: "Plastic bento lunch box with multiple compartments",
         img: "assets/products/lunch-box.jpg"
@@ -23,7 +23,7 @@ const productSeries = [
       {
         id: "soy-sauce-bottles",
         name: "Soy Sauce Bottles",
-        desc: "Lightweight PE soy sauce bottles in 15 ml and 30 ml, supplied with a white bottle and a red, green or black cap. Stock moulds only.",
+        desc: "Lightweight PE soy sauce bottles in 15 ml and 30 ml, supplied with a white bottle and a red, green or black cap. Stock molds only.",
         spec: "PE · 15 ml and 30 ml · white bottle · red, green or black cap",
         alt: "PE soy sauce bottle, 15 ml and 30 ml, white bottle with red, green or black cap",
         img: "assets/products/soy-sauce-bottle.jpg"
@@ -39,7 +39,7 @@ const productSeries = [
       {
         id: "soup-bowls",
         name: "Soup Bowls",
-        desc: "PS soup bowls with clear OPS lids, leak-resistant for takeaway, ramen and hot food delivery. Custom size, colour and logo printing.",
+        desc: "PS soup bowls with clear OPS lids, leak-resistant for takeaway, ramen and hot food delivery. Custom size, color and logo printing.",
         spec: "PS · clear OPS lid · leak-resistant · takeaway &amp; ramen",
         alt: "PS soup bowl with clear OPS lid for hot food takeaway",
         img: "assets/products/soup-bowl.jpg"
@@ -90,7 +90,7 @@ if (grid) {
       card.className = "card";
       if (p.id) { card.id = p.id; card.setAttribute("data-product", p.name); }
       const visual = p.img
-        ? `<div class="card-ph"><img src="${p.img}" alt="${p.alt || p.name}" loading="lazy"></div>`
+        ? `<div class="card-ph"><picture><source srcset="${p.img.replace(/\.jpg$/, '.webp')}" type="image/webp"><img src="${p.img}" alt="${p.alt || p.name}" loading="lazy"></picture></div>`
         : `<div class="card-ph"><span class="card-ico">📦</span><span class="ph-tag">Photo coming soon</span></div>`;
       card.innerHTML = `
         ${visual}
@@ -108,13 +108,15 @@ if (grid) {
 const toggle = document.getElementById("navToggle");
 const links = document.getElementById("navLinks");
 if (toggle && links) {
-  toggle.addEventListener("click", () => links.classList.toggle("open"));
+  toggle.addEventListener("click", () => {
+    const open = links.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
 }
 
 // ===== Contact form =====
-// PASTE YOUR FORM ENDPOINT HERE after signing up at https://formspree.io (or any form handler).
-// Example: const FORM_ENDPOINT = "https://formspree.io/f/mvkgbbnv";
-// Leave it empty and the form falls back to opening a pre-filled email in the visitor's mail client.
+// Inquiries go to Formspree; if the endpoint is ever emptied the form falls
+// back to opening a pre-filled email in the visitor's mail client.
 const FORM_ENDPOINT = "https://formspree.io/f/mvkgbbnv";
 const TO_EMAIL = "foodpack@foodpackcn.com";
 const TO_WHATSAPP = "+86 134 8079 1716";
@@ -132,6 +134,7 @@ function handleSubmit(e) {
     company: (el.company && el.company.value) || "",
     email: (el.email && el.email.value) || "",
     product: (el.product && el.product.value) || "",
+    market: (el.market && el.market.value) || "",
     message: (el.message && el.message.value) || ""
   };
 
@@ -143,6 +146,7 @@ function handleSubmit(e) {
       `Contact: ${vals.name}`,
       `Email: ${vals.email}`,
       `Product: ${vals.product}`,
+      `Target market: ${vals.market}`,
       "",
       vals.message
     ].join("\n");
