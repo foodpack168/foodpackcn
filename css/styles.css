@@ -215,6 +215,8 @@ a.social-item:hover svg{color:var(--green)}
 .site-footer p{font-size:14px;margin:4px 0;color:#eaf6ea}
 .site-footer a{color:#fff;text-decoration:underline;text-underline-offset:3px}
 .copyright{color:rgba(255,255,255,.78);font-size:13px}
+.footer-contact{color:rgba(255,255,255,.92);font-size:13.5px}
+.footer-contact a{font-weight:600}
 
 /* Responsive */
 @media(max-width:900px){
