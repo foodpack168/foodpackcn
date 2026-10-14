@@ -108,7 +108,7 @@ a.nav-ic:hover{border-color:var(--green);background:#f4faf4}
 .about-card .factory-video{margin:0}
 .about-card video{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);display:block;background:#0f2a13}
 .about-card .factory-video.wide video{aspect-ratio:16 / 9}
-.about-card .video-pair video{aspect-ratio:9 / 16;width:100%;max-width:320px;height:auto;margin:0 auto}
+.about-card .video-pair video{aspect-ratio:9 / 16;width:100%;max-width:320px;height:auto;margin:0 auto;object-fit:contain}
 .about-card figcaption{margin-top:8px;font-size:13px;color:var(--muted);text-align:center;line-height:1.5}
 
 /* Why-us detail blocks (01 Customization / 02 Quality / 03 Shipping) */
